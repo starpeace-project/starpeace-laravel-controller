@@ -34,7 +34,10 @@ The Starpeace Laravel Controller is the main controller for the Starpeace eco sy
 
 <h2>Backers</h2>
 
-<ul><li><a href="https://www.linkedin.com/in/rosswampler/">Ross Wampler</a></li></ul>
+<ul>
+<li><a href="https://www.linkedin.com/in/rosswampler/">Ross Wampler</a></li>
+<li><a href="https://www.linkedin.com/in/ron-appleton-b3066318/">Ron Appleton</a></li>
+</ul>
 
 <h3>Maintainers</h3>
 
