@@ -16,13 +16,11 @@ class CreatesGalaxiesTable extends Migration
         Schema::create('galaxies', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('galaxy_type_id')->unsigned();
-            $table->integer('galaxy_owner_id')->unsigned()->nullable();
             $table->string('name', 50);
             $table->string('display_name', 50);
             $table->timestamps();
 
             $table->foreign('galaxy_type_id')->references('id')->on('galaxy_types')->onUpdate('RESTRICT')->onDelete('RESTRICT');
-            $table->foreign('galaxy_owner_id')->references('id')->on('users')->onUpdate('RESTRICT')->onDelete('RESTRICT');
         });
     }
 

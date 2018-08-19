@@ -33,22 +33,22 @@ class GalaxyTypeSeeder extends Seeder
         Galaxy::create([
             'galaxy_type_id' => 1,
             'name' => 'milky-way',
-            'display_way' => 'Milky Way',
+            'display_name' => 'Milky Way',
         ]);
         Galaxy::create([
             'galaxy_type_id' => 2,
             'name' => 'andromeda',
-            'display_way' => 'Andromeda',
+            'display_name' => 'Andromeda',
         ]);
         Galaxy::create([
             'galaxy_type_id' => 3,
             'name' => 'black-eye-galaxy',
-            'display_way' => 'Black Eye Galaxy',
+            'display_name' => 'Black Eye Galaxy',
         ]);
         Galaxy::create([
             'galaxy_type_id' => 4,
             'name' => 'virgo-stellar-stream',
-            'display_way' => 'Virgo Stellar Stream',
+            'display_name' => 'Virgo Stellar Stream',
         ]);
     }
 }
