@@ -4,7 +4,7 @@
 
 <!-- TITLE/ -->
 
-<h1>Starpeace Lumen API Interface</h1>
+<h1>Starpeace Laravel Controller</h1>
 
 <!-- /TITLE -->
 
@@ -17,7 +17,7 @@
 
 <!-- DESCRIPTION/ -->
 
-This API acts as the new interface server for the re-build of Starpeace, it will be the communication point of the Starpeace client.
+The Starpeace Laravel Controller is the main controller for the Starpeace eco system, it controls the engine and cache controls as well as defining and managing in game objects.
 
 <!-- /DESCRIPTION -->
 
