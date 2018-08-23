@@ -21,6 +21,9 @@ class CreatesWorldsTable extends Migration
             $table->string('display_name', 50);
             $table->tinyInteger('use_whitelist')->default(0);
             $table->tinyInteger('use_blacklist')->default(1);
+            $table->integer('year')->default(2000);
+            $table->integer('month')->default(1);
+            $table->integer('day')->default(1);
             $table->timestamps();
 
             $table->foreign('galaxy_id')->references('id')->on('galaxies')->onUpdate('RESTRICT')->onDelete('RESTRICT');
