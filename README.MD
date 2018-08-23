@@ -36,7 +36,7 @@ The Starpeace Laravel Controller is the main controller for the Starpeace eco sy
 
 <ul>
 <li><a href="https://github.com/rwampler">Ross Wampler</a></li>
-<li><a href="https://www.linkedin.com/in/ron-appleton-b3066318/">Ron Appleton</a></li>
+<li><a href="https://github.com/ronappleton">Ron Appleton</a></li>
 </ul>
 
 <h3>Maintainers</h3>
@@ -44,7 +44,7 @@ The Starpeace Laravel Controller is the main controller for the Starpeace eco sy
 These amazing people are maintaining this project:
 
 <ul>
-<li><a href="https://www.linkedin.com/in/ron-appleton-b3066318/">Ron Appleton</a></li>
+<li><a href="https://github.com/ronappleton">Ron Appleton</a></li>
 <li><a href="https://github.com/rwampler">Ross Wampler</a></li>
 </ul>
 
