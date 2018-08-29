@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreatesTycoonImagesTable extends Migration
+class CreatesBuildingSetsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,14 +13,10 @@ class CreatesTycoonImagesTable extends Migration
      */
     public function up()
     {
-        Schema::create('tycoon_images', function (Blueprint $table) {
+        Schema::create('building_sets', function (Blueprint $table) {
             $table->increments('id');
-            $table->integer('tycoon_id')->unsigned();
-            $table->string('path');
-            $table->string('filename', 125);
+            $table->string('name', 50);
             $table->timestamps();
-
-            $table->foreign('tycoon_id')->references('id')->on('tycoons')->onUpdate('RESTRICT')->onDelete('RESTRICT');
         });
     }
 
@@ -31,6 +27,6 @@ class CreatesTycoonImagesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('tycoon_images');
+        Schema::dropIfExists('building_sets');
     }
 }

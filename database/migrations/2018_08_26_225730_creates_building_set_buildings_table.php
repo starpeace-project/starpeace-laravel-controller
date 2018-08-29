@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreatesBuildingsTable extends Migration
+class CreatesBuildingSetBuildingsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,13 +13,11 @@ class CreatesBuildingsTable extends Migration
      */
     public function up()
     {
-        Schema::create('buildings', function (Blueprint $table) {
+        Schema::create('building_set_buildings', function (Blueprint $table) {
             $table->increments('id');
-            $table->integer('faction_id')->unsigned();
-            $table->string('name', 50);
+            $table->integer('building_set_id')->unsigned();
+            $table->integer('building_id')->unsigned();
             $table->timestamps();
-
-            $table->foreign('faction_id')->references('id')->on('factions')->onUpdate('RESTRICT')->onDelete('RESTRICT');
         });
     }
 
@@ -30,6 +28,6 @@ class CreatesBuildingsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('buildings');
+        Schema::dropIfExists('building_set_buildings');
     }
 }

@@ -18,7 +18,6 @@ class CreatesTycoonBuildingInputsTable extends Migration
             $table->integer('tycoon_building_id')->unsigned();
             $table->integer('building_input_id')->unsigned();
             $table->integer('input_value')->unsigned();
-            $table->timestamps();
 
             $table->foreign('tycoon_building_id')->references('id')->on('tycoon_buildings')->onUpdate('RESTRICT')->onDelete('RESTRICT');
             $table->foreign('building_input_id')->references('id')->on('building_inputs')->onUpdate('RESTRICT')->onDelete('RESTRICT');

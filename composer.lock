@@ -3494,12 +3494,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/starpeace-project/starpeace-eloquent-models.git",
-                "reference": "dd8b2f4b5c69d6c3f4a5d6352c9a08dbea432920"
+                "reference": "383e37bd8716ab3bd86817b079e8e2351e438389"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/starpeace-project/starpeace-eloquent-models/zipball/dd8b2f4b5c69d6c3f4a5d6352c9a08dbea432920",
-                "reference": "dd8b2f4b5c69d6c3f4a5d6352c9a08dbea432920",
+                "url": "https://api.github.com/repos/starpeace-project/starpeace-eloquent-models/zipball/383e37bd8716ab3bd86817b079e8e2351e438389",
+                "reference": "383e37bd8716ab3bd86817b079e8e2351e438389",
                 "shasum": ""
             },
             "require": {
@@ -3535,7 +3535,7 @@
                 "models",
                 "starpeace"
             ],
-            "time": "2018-08-22T20:21:10+00:00"
+            "time": "2018-08-26T23:45:35+00:00"
         },
         {
             "name": "swiftmailer/swiftmailer",

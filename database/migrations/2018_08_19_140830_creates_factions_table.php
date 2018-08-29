@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreatesSystemFactionsTable extends Migration
+class CreatesFactionsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,9 +13,9 @@ class CreatesSystemFactionsTable extends Migration
      */
     public function up()
     {
-        Schema::create('system_factions', function (Blueprint $table) {
+        Schema::create('factions', function (Blueprint $table) {
             $table->increments('id');
-            $table->timestamps();
+            $table->string('name', 50);
         });
     }
 
@@ -26,6 +26,6 @@ class CreatesSystemFactionsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('system_factions');
+        Schema::dropIfExists('factions');
     }
 }

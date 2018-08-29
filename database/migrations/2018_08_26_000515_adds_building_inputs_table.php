@@ -17,8 +17,7 @@ class AddsBuildingInputsTable extends Migration
             $table->increments('id');
             $table->integer('building_id')->unsigned();
             $table->integer('variable_id')->unsigned();
-            $table->integer('default_value');
-            $table->timestamps();
+            $table->integer('default_value')->default(10);
 
             $table->foreign('building_id')->references('id')->on('buildings')->onUpdate('RESTRICT')->onDelete('RESTRICT');
             $table->foreign('variable_id')->references('id')->on('building_variables')->onUpdate('RESTRICT')->onDelete('RESTRICT');

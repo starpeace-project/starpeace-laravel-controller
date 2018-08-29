@@ -16,12 +16,12 @@ class CreatesTycoonBuildingOutputsTable extends Migration
         Schema::create('tycoon_building_outputs', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('tycoon_building_id')->unsigned();
-            $table->integer('building_input_id')->unsigned();
+            $table->integer('building_output_id')->unsigned();
             $table->integer('output_value')->unsigned();
             $table->timestamps();
 
             $table->foreign('tycoon_building_id')->references('id')->on('tycoon_buildings')->onUpdate('RESTRICT')->onDelete('RESTRICT');
-            $table->foreign('building_input_id')->references('id')->on('building_inputs')->onUpdate('RESTRICT')->onDelete('RESTRICT');
+            $table->foreign('building_output_id')->references('id')->on('building_outputs')->onUpdate('RESTRICT')->onDelete('RESTRICT');
         });
     }
 

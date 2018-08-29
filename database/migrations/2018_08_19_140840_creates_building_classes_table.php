@@ -16,11 +16,11 @@ class CreatesBuildingClassesTable extends Migration
         Schema::create('building_classes', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('building_type_id')->unsigned();
-            $table->integer('system_faction_id')->unsigned();
+            $table->integer('faction_id')->unsigned();
             $table->timestamps();
 
             $table->foreign('building_type_id')->references('id')->on('building_types')->onDelete('RESTRICT')->onUpdate('RESTRICT');
-            $table->foreign('system_faction_id')->references('id')->on('system_factions')->onDelete('RESTRICT')->onUpdate('RESTRICT');
+            $table->foreign('faction_id')->references('id')->on('factions')->onDelete('RESTRICT')->onUpdate('RESTRICT');
         });
     }
 

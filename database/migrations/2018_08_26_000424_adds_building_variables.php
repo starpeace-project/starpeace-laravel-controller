@@ -16,8 +16,6 @@ class AddsBuildingVariables extends Migration
         Schema::create('building_variables', function (Blueprint $table) {
             $table->increments('id');
             $table->string('name');
-            $table->string('display_name');
-            $table->timestamps();
         });
     }
 

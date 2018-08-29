@@ -18,5 +18,17 @@ class DatabaseSeeder extends Seeder
         $this->call(WorldTableSeeder::class);
         $this->call(TycoonTableSeeder::class);
         $this->call(WorldTycoonSeeder::class);
+        $this->call(FactionTableSeeder::class);
+        $this->call(FactionBonusTableSeeder::class);
+        $this->call(FactionBonusesTableSeeder::class);
+        $this->call(BuildingVariableTableSeeder::class);
+        $this->call(TycoonCompanyTableSeeder::class);
+        $this->call(BuildingSetSeeder::class);
+        $this->call(BuildingTableSeeder::class);
+        $this->call(BuildingSetBuildingsSeeder::class);
+        $this->call(BuildingInputSeeder::class);
+        $this->call(BuildingOutputSeeder::class);
+        $this->call(MapTownTableSeeder::class);
+        $this->call(TycoonBuildingTableSeeder::class);
     }
 }

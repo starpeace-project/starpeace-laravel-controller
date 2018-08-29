@@ -1,6 +1,7 @@
 <?php
 
 use Faker\Generator as Faker;
+
 /*
 |--------------------------------------------------------------------------
 | Model Factories
@@ -43,5 +44,13 @@ $factory->define(\Starpeace\Models\Eloquent\Common\World::class, function (Faker
         'name' => strtolower($name),
         'display_name' => ucfirst($name),
         'created_at' => Carbon\Carbon::now()->toDateTimeString(),
+    ];
+});
+
+$factory->define(\Starpeace\Models\Eloquent\Common\Building::class, function (Faker $faker) {
+    $factions = \Starpeace\Models\Eloquent\Common\Faction::all();
+    return [
+        'name' => $faker->lastName,
+        'faction_id' => $factions[mt_rand(0, 3)],
     ];
 });

@@ -16,12 +16,12 @@ class CreatesTycoonCompaniesTable extends Migration
         Schema::create('tycoon_companies', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('tycoon_id')->unsigned();
-            $table->integer('system_faction_id')->unsigned();
+            $table->integer('faction_id')->unsigned();
             $table->string('name', 50);
             $table->timestamps();
 
             $table->foreign('tycoon_id')->references('id')->on('tycoons')->onUpdate('RESTRICT')->onDelete('RESTRICT');
-            $table->foreign('system_faction_id')->references('id')->on('system_factions')->onUpdate('RESTRICT')->onDelete('RESTRICT');
+            $table->foreign('faction_id')->references('id')->on('factions')->onUpdate('RESTRICT')->onDelete('RESTRICT');
         });
     }
 
