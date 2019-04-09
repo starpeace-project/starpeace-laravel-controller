@@ -23,15 +23,20 @@ class TycoonBuildingTableSeeder extends Seeder
 
         foreach ($tycoons as $tycoon) {
             $worlds_tycoon_is_on = WorldTycoon::where('tycoon_id', $tycoon->id)->get();
+            print_r($worlds_tycoon_is_on);
             if (!empty($worlds_tycoon_is_on)) {
                 $tycoon_companies = TycoonCompany::where('tycoon_id', $tycoon->id)->get();
+                print_r($tycoon_companies);
                 if (!empty($tycoon_companies)) {
                     foreach ($worlds_tycoon_is_on as $world_tycoon_is_on) {
+                        print_r($world_tycoon_is_on);
                         $map_towns = MapTown::where('map_id', $world_tycoon_is_on->map_id)->get();
                         if (!empty($map_towns->items)) {
+                            print_r($map_towns);
                             $map_town = $map_towns[mt_rand(0, count($map_towns) - 1)]->town_id;
-
+                            print_r($map_town);
                             foreach ($tycoon_companies as $tycoon_company) {
+                                print_r($tycoon_company);
                                 for ($i = 0; $i < mt_rand(0,10); $i++) {
                                     $building = $buildings[mt_rand(0, count($buildings) -1)];
                                     TycoonBuilding::create([
